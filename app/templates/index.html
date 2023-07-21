@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Iris prediction</title>
+        <link rel="stylesheet" href="static\style.css">
+    </head>
+    
+    <body>
+        <form name="form", method="POST", style="text-align: center;">
+            <br>
+            Sepal length: <input type="number" step=any name="sepal_length", placeholder="Enter sepal length in cm" required/>
+            <br><br>
+            Sepal width: <input type="number" step=any name="sepal_width", placeholder="Enter sepal width in cm" required/>
+            <br><br>
+            Petal length: <input type="number" step=any name="petal_length", placeholder="Enter petal length in cm" required/>
+            <br><br>
+            Petal width: <input type="number" step=any name="petal_width", placeholder="Enter petal width in cm" required/>
+            <br><br>
+            <button value="Submit">Run</button>
+        </form>
+        <p style="text-align: center;">{{ knn }}</p>
+        <p style="text-align: center;">{{ svc }}</p>
+    </body>
+</html>
